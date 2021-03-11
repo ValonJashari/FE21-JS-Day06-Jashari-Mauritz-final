@@ -9,7 +9,7 @@ let books = `{
 
       "read": "false",
       "price": 70,
-      "image": ""
+      "image": "photos/carousel_vienna.png"
   },
 
   { 
@@ -20,7 +20,7 @@ let books = `{
 
         "read": "true",
         "price": 95,
-        "image": ""
+        "image": "photos/carousel3.png"
 
 
 
