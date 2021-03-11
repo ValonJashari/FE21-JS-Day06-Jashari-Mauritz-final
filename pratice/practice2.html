@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>JSON example</title>
+
+</head>
+
+<body>
+
+  <h1>Employees</h1>
+
+  <div id="results"></div>
+
+  <script src="data.json"></script>
+
+  <script>
+
+    let mydata = JSON.parse(employees); // convert string into an object
+
+    console.log(mydata); // prints converted object into the console
+
+    /* Prints data from Object1 */
+
+    for(let i=0; i<mydata.length;i++)
+    {
+        document.getElementById("results").innerHTML+=`My name is ${mydata[i].firstName} and I am working as ${mydata[i].jobTitleName} and my email address is ${mydata[i].emailAddress}<hr>`;
+    };
+  </script>
+  <script>
+      localStorage.setItem('favouriteColor', 'blue');
+      console.log(localStorage.favouriteColor);
+
+      let arrayNames = ["Roland","Eddie","Susanna","Jake","Oy"];
+      localStorage.setItem('names', JSON.stringify(arrayNames));
+      console.log(JSON.parse(localStorage.getItem('names')));
+      localStorage.removeItem('names');
+      console.log(JSON.parse(localStorage.getItem('names')));
+  </script>
+
+</body>
+
+</html>
+
