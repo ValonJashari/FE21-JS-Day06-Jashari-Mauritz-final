@@ -1,28 +1,44 @@
-let results= document.getElementById("results");
-    let books = {
-        "Javascript": [{
-            "title": "JS made easy",
-            "price": 70
-        }, {
-            "title": "Javascript for Dummies",
-            "price": 40
-        }],
-        "PHP": [{
-            "title": "PHP for the People",
-            "price": 1000
-        }, {
-            "title": "PEE H. PEE",
-            "price": 1300
-        }]
-    }
- 
+document.getElementById("result").innerHTML="<h3>Sandwich=" + sandwiches.sandwich+ "</h3> <h3>Calories = "+sandwiches.calories+"</h3>";
+document.getElementById("result").innerHTML+="<h4>Fries Size=" + fries.fries_size+ "</h4> <h4>Calories ="+fries.calories+"</h4>";
 
-    results.innerHTML= "<h2>Javascript Books:</h2>"
-    for (i = 0; i < books.Javascript.length; i++) {
-      results.innerHTML+=`<div><h3> ${books.Javascript[i].title} </h3><b>price:</b> ${books.Javascript[i].price} EUR</div>`;
+//document.getElementById("result").innerHTML+=`My favorite sandwich is a ${sandwiches.sandwich} which has approximately ${sandwiches.calories} calories, along with it I enjoy eating ${fries.fries_size} which have about ${fries.calories} calories`; 
+
+
+// Those codes are not included for basic exercise
+ var sandwiches = 
+    {
+        "sandwich": "hamburger",
+        "calories": "260"
+    };
+    var fries = 
+    {
+        "fries_size":"Large French Fries",
+        "calories":"750"
+    };
+    
+    /*for (var var1 in sandwiches )
+    {   
+        console.log(sandwiches[var1]);
+       // console.log(sandwiches[var1]);
+
+    }*/
+
+    for (const [key,value] of Object.entries(sandwiches))
+     {
+        console.log(key,value);
+
+        
     }
 
-    results.innerHTML+= "<hr><h2>PHP Books:</h2>"
-    for (i = 0; i < books.PHP.length; i++) {
-      results.innerHTML+=`<div><h3> ${books.PHP[i].title} </h3><b>price:</b> ${books.PHP[i].price} EUR</div>`;
-    }
+    
+    
+    //console.log(sandwiches["sandwich"])
+    
+    /*
+    for (var var2 of fries)
+    {
+        console.log(var2);
+        console.log(fries[var2]);
+    }*/
+   document.getElementById("result").innerHTML+=`My favorite ${sandwiches["sandwich"]} is a ${sandwiches.sandwich} which has approximately ${sandwiches.calories} calories, along with it I enjoy eating ${fries.fries_size} which have about ${fries.calories} calories`; 
+
