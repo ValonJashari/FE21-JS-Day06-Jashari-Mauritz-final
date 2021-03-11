@@ -73,28 +73,5 @@ let employees = `
 
     }]
 `
-var data = JSON.parse(employees);
 
-function createTable(data){
-    let fillTable = "";
-    for (let i = 0; i < data.length; i++){
-        fillTable += `
-        <table class="table">
-        <tbody class="">
-          <tr>
-            <td>${data[i].uniqueId}</td>
-            <td>${data[i].firstName}</td>
-            <td>${data[i].lastName}</td>
-            <td>${data[i].emailAddress}</td>
-            <td>${data[i].salary}</td>
-            <td>${data[i].jobTitleName}</td>
-          </tr>
-        </tbody>
-      </table>
-`
-    }
-    return fillTable;
-}
-
-document.getElementById("table").innerHTML += createTable(data);
-
+var data = JSON.parse(employees)
