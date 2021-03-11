@@ -33,7 +33,7 @@ let books = `{
 
             "read": "true",
             "price": 120,
-            "image": ""
+            "image": "photos/carousel4.png"
 
   },
   {
@@ -43,7 +43,7 @@ let books = `{
 
             "read": "true",
             "price": 150,
-            "image": ""
+            "image": "photos/cocktail.png"
 
   }],
   "Web_Developer":
@@ -55,7 +55,7 @@ let books = `{
             "read": "true",
             "price": 2500,
 
-            "image": ""
+            "image": "photos/cold_drinks.png"
 
   },
   {
@@ -66,7 +66,7 @@ let books = `{
             "read": "true",
             
             "price": 4500,
-            "image": ""
+            "image": "photos/copa_delacass.png"
    }]
 
 }
