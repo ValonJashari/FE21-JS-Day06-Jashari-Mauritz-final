@@ -1,0 +1,74 @@
+let books = `{
+
+"Javascript":
+    [{
+
+      "title": "Javascript for Dummies",
+
+      "author" : "Dummy Dumb Dumb",
+
+      "read": "false",
+      "price": 70,
+      "image": ""
+  },
+
+  { 
+
+        "title": "Javascript for beginners",
+
+        "author" : "Max Vielebergr",
+
+        "read": "true",
+        "price": 95,
+        "image": ""
+
+
+
+    }],
+  
+  "Python":[{
+            "title": "Python 3",
+
+            "author" : "MAx Lumberg",
+
+            "read": "true",
+            "price": 120,
+            "image": ""
+
+  },
+  {
+            "title": "Python3 from begineer to Advanced",
+
+            "author" : "Andrew Stonksi",
+
+            "read": "true",
+            "price": 150,
+            "image": ""
+
+  }],
+  "Web_Developer":
+    [{
+            "title": "Frontend Developer",
+
+            "author" : "Code Factory Wien",
+
+            "read": "true",
+            "price": 2500,
+
+            "image": ""
+
+  },
+  {
+            "title": "Full Stack Web Development",
+
+            "author" : "Acilio, Theo, Serri",
+
+            "read": "true",
+            
+            "price": 4500,
+            "image": ""
+   }]
+
+}
+
+`
